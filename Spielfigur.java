@@ -1,19 +1,19 @@
 
 /**
- * Beschreiben Sie hier die Klasse Spiel.
+ * Beschreiben Sie hier die Klasse Spielfigur.
  * 
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class Spiel
+public class Spielfigur
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private int x;
 
     /**
-     * Konstruktor für Objekte der Klasse Spiel
+     * Konstruktor für Objekte der Klasse Spielfigur
      */
-    public Spiel()
+    public Spielfigur()
     {
         // Instanzvariable initialisieren
         x = 0;
