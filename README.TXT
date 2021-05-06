@@ -1,14 +1,12 @@
 ------------------------------------------------------------------------
-Dies ist die README-Datei des Projekts. Hier sollten Sie Ihr Projekt
-beschreiben.
-Erzählen Sie dem Leser (jemand, der nichts über dieses Projekt weiss),
-alles, was er/sie wissen muss. Üblicherweise sollte der Kommentar 
-zumindest die folgenden Angaben umfassen:
+Dies ist das Projekt Quizmaster.Es beinhaltet ein Spiel.Das Thema ist Natur.Immer, wenn man die richtige 
+Antwort zu der Frage abgibt fliegt der Vogel zum nächsten Baum.
+
 ------------------------------------------------------------------------
 
-PROJEKTBEZEICHNUNG:
-PROJEKTZWECK:
+PROJEKTBEZEICHNUNG: Quizmaster
+PROJEKTZWECK: Spiel
 VERSION oder DATUM:
 WIE IST DAS PROJEKT ZU STARTEN:
-AUTOR(EN):
+AUTOR(EN): Amelie,Lina,Lara,Linda
 BENUTZERHINWEISE:
