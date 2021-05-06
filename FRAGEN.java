@@ -1,6 +1,7 @@
 
 /**
- * Beschreiben Sie hier die Klasse FRAGEN.
+<<<<<<< HEAD
+ *In dieser Klasse werden die Fragen für das QUIZ festgelegt
  * 
  * @author (LINDA UND LARA) 
  * @version (06.05)
@@ -61,5 +62,6 @@ public class FRAGEN
         // tragen Sie hier den Code ein
         fragen = "Wer oder was ist eine Mimose";
     }
+  
   
 }

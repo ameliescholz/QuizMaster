@@ -1,6 +1,7 @@
 
 /**
- * Beschreiben Sie hier die Klasse QUIZFRAGEN.
+<<<<<<< HEAD
+ * Die Klasse Quiz steuert die Klasse Spiel.
  * 
  * @author (LINDA UND LARA) 
  * @version (eine Versionsnummer oder ein Datum)
@@ -30,5 +31,7 @@ public class QUIZ
     {
         // tragen Sie hier den Code ein
         x=0;
+
+  
     }
 }
