@@ -1,19 +1,21 @@
 
 /**
+<<<<<<< HEAD
  * Die Klasse Quiz steuert die Klasse Spiel.
  * 
- * @author  Lara & Linda
- * @version 05.06.21
+ * @author (LINDA UND LARA) 
+ * @version (eine Versionsnummer oder ein Datum)
  */
 public class QUIZ
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
+    
     private int x;
-
+    QUIZ quizfragen;
     /**
-     * Konstruktor für Objekte der Klasse QUIZ
+     * Konstruktor für Objekte der Klasse QUIZFRAGEN
      */
-    public QUIZ()
+    QUIZ()
     {
         // Instanzvariable initialisieren
         x = 0;
@@ -25,9 +27,11 @@ public class QUIZ
      * @param  y    ein Beispielparameter für eine Methode
      * @return        die Summe aus x und y
      */
-    public int beispielMethode(int y)
+    void Frage1(int y)
     {
         // tragen Sie hier den Code ein
-        return x + y;
+        x=0;
+
+  
     }
 }

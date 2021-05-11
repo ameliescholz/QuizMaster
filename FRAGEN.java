@@ -1,13 +1,15 @@
 
 /**
- * in der Klasse Fragen werden die Fragen für das Quiz fetsgelegt.
+<<<<<<< HEAD
+ *In dieser Klasse werden die Fragen für das QUIZ festgelegt
  * 
- * @author Linda & Lara 
- * @version 05.06.21
+ * @author (LINDA UND LARA) 
+ * @version (06.05)
  */
 public class FRAGEN
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
+
     
     String Frage1;
     String Frage2;
@@ -25,11 +27,16 @@ public class FRAGEN
     String RichtigeAnwort4;
     String RichtigeAnwort5;
 
+ 
+  
+
+
     /**
      * Konstruktor für Objekte der Klasse FRAGEN
      */
-    public FRAGEN()
+     FRAGEN()
     {
+
         // Instanzvariable initialisieren
     Frage1 = "Wie viele Zaehne kann ein Hai im Laufe seines Lebens haben?";
     Frage2 = "Welche der folgenden Nagetiere haelt keinen Winterschlaf?";
@@ -47,9 +54,8 @@ public class FRAGEN
     RichtigeAnwort4  = "(B)";
     RichtigeAnwort5  = "(B)";
 
-    
-        
-    }
+  }
+ }
+  
 
-    
-}
+
