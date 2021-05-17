@@ -36,25 +36,46 @@ public class FRAGEN
      */
      FRAGEN()
     {
-
+        
         // Instanzvariable initialisieren
-    Frage1 = "Wie viele Zaehne kann ein Hai im Laufe seines Lebens haben?";
-    Frage2 = "Welche der folgenden Nagetiere haelt keinen Winterschlaf?";
-    Frage3 = "Wie nennt man ein maennliches Schaf?";
-    Frage4 = "Welcher dieser Affen zaehlt nicht zu den Menschenaffen?";
-    Frage5 = "Wer oder was ist eine Mimiose?";
-    Antwort1 = "(A) Bis zu 20 000 Zaehne   (B) Bis zu 10 000 Zaehne  (C) bis zu 2000 Zaehne"  ;
-    Antwort2 = "(A) Murmeltier  (B) Siebenschlaefer  (C) Lemming ";
-    Antwort3 = "(A) Lamm   (B) Hammel   (C) Widder ";
-    Antwort4 = "(A) Gorilla   (B) Gibbon   (C) Oran-utan";
-    Antwort5 = "(A) eine Hautkrankheit   (B)  eine tropische Pflanze  (C) ein biochemischer Vorgang ";
-    RichtigeAnwort1 = "(A)";
-    RichtigeAnwort2  = "(C)";
-    RichtigeAnwort3  = "(C)";
-    RichtigeAnwort4  = "(B)";
-    RichtigeAnwort5  = "(B)";
+        Frage1 = "Wie viele Zaehne kann ein Hai im Laufe seines Lebens haben?";
+        Frage2 = "Welche der folgenden Nagetiere haelt keinen Winterschlaf?";
+        Frage3 = "Wie nennt man ein maennliches Schaf?";
+        Frage4 = "Welcher dieser Affen zaehlt nicht zu den Menschenaffen?";
+        Frage5 = "Wer oder was ist eine Mimiose?";
+        Antwort1 = "(A) Bis zu 20 000 Zaehne   (B) Bis zu 10 000 Zaehne  (C) bis zu 2000 Zaehne"  ;
+        Antwort2 = "(A) Murmeltier  (B) Siebenschlaefer  (C) Lemming ";
+        Antwort3 = "(A) Lamm   (B) Hammel   (C) Widder ";
+        Antwort4 = "(A) Gorilla   (B) Gibbon   (C) Oran-utan";
+        Antwort5 = "(A) eine Hautkrankheit   (B)  eine tropische Pflanze  (C) ein biochemischer Vorgang ";
+        RichtigeAnwort1 = "(A)";
+        RichtigeAnwort2  = "(C)";
+        RichtigeAnwort3  = "(C)";
+        RichtigeAnwort4  = "(B)";
+        RichtigeAnwort5  = "(B)";
 
   }
+  
+  void Frage1 ()
+        {
+           System. out. println ("Wie viele Zaehne kann ein Hai im Laufe seines Lebens haben?"); 
+        }
+  void Frage2 ()
+        {
+           System. out. println ("Welche der folgenden Nagetiere haelt keinen Winterschlaf?"); 
+        }
+  void Frage3 ()
+        {
+           System. out. println ("Wie nennt man ein maennliches Schaf?"); 
+        }
+  void Frage4 ()
+        {
+           System. out. println ("Welcher dieser Affen zaehlt nicht zu den Menschenaffen"); 
+        }      
+  void Frage5 ()
+        {
+           System. out. println ("Wer oder was ist eine Mimiose?"); 
+        }
  }
   
 
