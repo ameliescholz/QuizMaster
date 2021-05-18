@@ -1,19 +1,20 @@
-
+import java.awt.*;
+import java.awt.event.*;
 /**
- * Beschreiben Sie hier die Klasse Spiel.
+ * Beschreiben Sie hier die Klasse ZEICHENFLÄCHE.
  * 
  * @author (Lara und Linda) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class Spiel extends QUIZ
+public class ZEICHENFLÄCHE
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private int x;
 
     /**
-     * Konstruktor für Objekte der Klasse Spiel
+     * Konstruktor für Objekte der Klasse ZEICHENFLÄCHE
      */
-    public Spiel()
+    public ZEICHENFLÄCHE()
     {
         // Instanzvariable initialisieren
         x = 0;

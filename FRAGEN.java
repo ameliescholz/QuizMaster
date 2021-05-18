@@ -1,10 +1,19 @@
 
+
+
+
+
+
+
+
+import java.awt.*;
+import java.awt.event.*;
 /**
 <<<<<<< HEAD
  *In dieser Klasse werden die Fragen für das QUIZ festgelegt
  * 
  * @author (LINDA UND LARA) 
- * @version (06.05)
+ * @version (18.05)
  */
 public class FRAGEN
 {
@@ -26,9 +35,7 @@ public class FRAGEN
     String RichtigeAnwort3;
     String RichtigeAnwort4;
     String RichtigeAnwort5;
-
- 
-  
+    String TextField;
 
 
     /**
@@ -58,7 +65,7 @@ public class FRAGEN
   
   void Frage1 ()
         {
-           System. out. println ("Wie viele Zaehne kann ein Hai im Laufe seines Lebens haben?"); 
+           System. out. println("Wie viele Zaehne kann ein Hai im Laufe seines Lebens haben?"); 
         }
   void Frage2 ()
         {
