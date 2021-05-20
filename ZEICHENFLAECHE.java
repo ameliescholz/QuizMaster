@@ -7,7 +7,8 @@ import java.awt.event.*;
  * @author (Lara und Linda) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class ZEICHENFLAECHE
+public class ZEICHENFLAECHE 
+
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private static final int rasterGroesse = 40;
@@ -15,20 +16,23 @@ public class ZEICHENFLAECHE
     private static final int breiteFenster = rasterGroesse * 26;
     private static ZEICHENFLAECHE o = null;
     private JFrame fenster = null;
-
+    
+   
     /**
      * Konstruktor für Objekte der Klasse ZEICHENFLAECHE
      */
     public ZEICHENFLAECHE()
     {
         // Instanzvariable initialisieren
-        fenster = new JFrame ("Zeichenfläche");
+        fenster = new JFrame ("QuizMaster");
         fenster. setResizable (false);
         fenster. setVisible (true);
         fenster. setLayout (null);
         fenster. getContentPane (). setBackground (new Color (240, 240, 240));
         Insets i = fenster.getInsets();
-        fenster. setSize (breiteFenster, hoeheFenster + i.top);    
+        fenster. setSize (breiteFenster, hoeheFenster + i.top);  
+        
+        
     }
 
     /**
@@ -60,5 +64,6 @@ public class ZEICHENFLAECHE
     {
         return hoeheFenster;
     }
+    
     
 }

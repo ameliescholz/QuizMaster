@@ -65,23 +65,23 @@ public class FRAGEN
   
   void Frage1 ()
         {
-           System. out. println("Wie viele Zaehne kann ein Hai im Laufe seines Lebens haben?"); 
+           System. out. println(Frage1); 
         }
   void Frage2 ()
         {
-           System. out. println ("Welche der folgenden Nagetiere haelt keinen Winterschlaf?"); 
+           System. out. println (Frage2); 
         }
   void Frage3 ()
         {
-           System. out. println ("Wie nennt man ein maennliches Schaf?"); 
+           System. out. println (Frage3); 
         }
   void Frage4 ()
         {
-           System. out. println ("Welcher dieser Affen zaehlt nicht zu den Menschenaffen"); 
+           System. out. println (Frage4); 
         }      
   void Frage5 ()
         {
-           System. out. println ("Wer oder was ist eine Mimiose?"); 
+           System. out. println (Frage5); 
         }
  }
   
