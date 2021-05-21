@@ -1,13 +1,15 @@
 import java.awt.*;
-import javax. swing. *;
+import javax.swing.*;
 import java.awt.event.*;
+import java.awt.event.KeyListener;
+
 /**
  * Beschreiben Sie hier die Klasse ZEICHENFLÄCHE.
  * 
  * @author (Lara und Linda) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class ZEICHENFLAECHE 
+public class ZEICHENFLAECHE  extends FRAGEN  
 
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
@@ -16,6 +18,9 @@ public class ZEICHENFLAECHE
     private static final int breiteFenster = rasterGroesse * 26;
     private static ZEICHENFLAECHE o = null;
     private JFrame fenster = null;
+    JLabel l;
+    int x,y;
+    JFrame f;
     
    
     /**
@@ -31,6 +36,16 @@ public class ZEICHENFLAECHE
         fenster. getContentPane (). setBackground (new Color (240, 240, 240));
         Insets i = fenster.getInsets();
         fenster. setSize (breiteFenster, hoeheFenster + i.top);  
+        ImageFrage1 = new ImageIcon ("Frage 1.jpg");
+        l = new JLabel (ImageFrage1);
+        l.setLocation(x,y);
+        f.add(l);
+        x = 0;
+        y = 0;
+        f = new JFrame();
+        f.setVisible(true);
+        f.setSize(500,500);
+        
         
         
     }
