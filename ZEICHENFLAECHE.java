@@ -7,7 +7,7 @@ import java.awt.event.*;
  * @author (Lara und Linda) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class ZEICHENFLAECHE 
+public class ZEICHENFLAECHE extends QUIZ
 
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
@@ -17,6 +17,9 @@ public class ZEICHENFLAECHE
     private static ZEICHENFLAECHE o = null;
     private JFrame fenster = null;
     
+    Label fragetext; 
+    
+    Label antworttext;
    
     /**
      * Konstruktor für Objekte der Klasse ZEICHENFLAECHE
@@ -31,6 +34,21 @@ public class ZEICHENFLAECHE
         fenster. getContentPane (). setBackground (new Color (240, 240, 240));
         Insets i = fenster.getInsets();
         fenster. setSize (breiteFenster, hoeheFenster + i.top);  
+        
+        fragetext = new Label();
+        fragetext.setText(momentanefrage);
+        fragetext.setVisible(true);
+        fragetext.setLocation(200,50);
+        fragetext.setSize(400,50);
+        fenster.add(fragetext);
+        
+        antworttext = new Label();
+        antworttext.setText(momentaneantwort);
+        antworttext.setVisible(true);
+        antworttext.setLocation(200,100);
+        antworttext.setSize(450,50);
+        fenster.add(antworttext);
+        
         
         
     }
@@ -65,5 +83,6 @@ public class ZEICHENFLAECHE
         return hoeheFenster;
     }
     
+     
     
 }

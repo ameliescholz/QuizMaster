@@ -17,6 +17,7 @@ public class QUIZ extends FRAGEN
     char geantwortet;
     String momentanefrage;
     boolean Ergebniss;
+    String momentaneantwort;
     
     
     /**
@@ -26,7 +27,7 @@ public class QUIZ extends FRAGEN
     {
         // Instanzvariable initialisieren
         momentanefrage = Frage1;
-        
+        momentaneantwort = Antwort1;
     }
 
     /**
@@ -57,6 +58,11 @@ public class QUIZ extends FRAGEN
 
   
     }
+    
+    /**
+     * nicht mehr noetig
+     *
+     */
     
     void Fragestellen ()
     {
@@ -165,4 +171,32 @@ public class QUIZ extends FRAGEN
              momentanefrage = "Frage6";
             }
     }
+    
+    
+    
+    void MomentaneAntwortaendern()
+    {
+        if (momentaneantwort == "Antwort1")
+            {
+             momentaneantwort = "Antwort2";
+            }
+        else if(momentaneantwort == "Antwort2")
+            {
+             momentaneantwort = "Antwort3";
+            }
+        else if(momentaneantwort == "Antwort3")
+            {
+             momentaneantwort = "Antwort4";
+            }
+        else if(momentaneantwort == "Antwort4")
+            {
+             momentaneantwort = "Antwort5";
+            }
+        else if(momentaneantwort == "Antwort5")
+            {
+             momentaneantwort = "Antwort6";
+            }
+    }
+    
+    
 }
