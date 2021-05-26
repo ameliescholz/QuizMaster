@@ -1,26 +1,37 @@
 import java.awt.*;
-import javax. swing. *;
+import javax.swing.*;
 import java.awt.event.*;
+import java.awt.event.KeyListener;
+
 /**
  * Beschreiben Sie hier die Klasse ZEICHENFLÄCHE.
  * 
  * @author (Lara und Linda) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class ZEICHENFLAECHE extends QUIZ
 
+public class ZEICHENFLAECHE extends QUIZ
 {
+
+
+
+
+   
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private static final int rasterGroesse = 40;
     private static final int hoeheFenster = rasterGroesse * 20;
     private static final int breiteFenster = rasterGroesse * 26;
     private static ZEICHENFLAECHE o = null;
     private JFrame fenster = null;
+    JLabel l;
+    int x,y;
+    JFrame f;
     
     Label fragetext; 
     
     Label antworttext;
    
+  
     /**
      * Konstruktor für Objekte der Klasse ZEICHENFLAECHE
      */
@@ -34,6 +45,16 @@ public class ZEICHENFLAECHE extends QUIZ
         fenster. getContentPane (). setBackground (new Color (240, 240, 240));
         Insets i = fenster.getInsets();
         fenster. setSize (breiteFenster, hoeheFenster + i.top);  
+        //ImageFrage1 = new ImageIcon ("Frage 1.jpg");
+        //l = new JLabel (ImageFrage1);
+        //l.setLocation(x,y);
+        //f.add(l);
+        //x = 0;
+        //y = 0;
+        //f = new JFrame();
+        //f.setVisible(true);
+        //f.setSize(500,500);
+        
         
         fragetext = new Label();
         fragetext.setText(momentanefrage);
@@ -86,3 +107,4 @@ public class ZEICHENFLAECHE extends QUIZ
      
     
 }
+

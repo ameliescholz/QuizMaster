@@ -8,6 +8,8 @@
 
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.ImageIcon;
+
 /**
 <<<<<<< HEAD
  *In dieser Klasse werden die Fragen für das QUIZ festgelegt
@@ -36,6 +38,7 @@ public class FRAGEN
     String RichtigeAnwort4;
     String RichtigeAnwort5;
     String TextField;
+    ImageIcon ImageFrage1;
 
 
     /**
