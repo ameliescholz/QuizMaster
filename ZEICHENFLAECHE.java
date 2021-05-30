@@ -27,7 +27,7 @@ public class ZEICHENFLAECHE extends QUIZ
     int x,y;
     JFrame f;
     
-    Label fragetext; 
+    Label fragetext;
     
     Label antworttext;
    

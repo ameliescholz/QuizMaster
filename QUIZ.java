@@ -18,7 +18,7 @@ public class QUIZ extends FRAGEN
     String momentanefrage;
     boolean Ergebniss;
     String momentaneantwort;
-    
+    ZEICHENFLAECHE fragetext;
     
     /**
      * Konstruktor für Objekte der Klasse QUIZFRAGEN
@@ -28,8 +28,16 @@ public class QUIZ extends FRAGEN
         // Instanzvariable initialisieren
         momentanefrage = Frage1;
         momentaneantwort = Antwort1;
+        
+         
     }
 
+    void Ausloeser()
+    {
+        //TasteGedrueckt();
+         Antwortpruefen();
+    }
+    
     /**
      * hier wird die gedruekte Taste einer moeglichen Antwortmoeglichkeit zugeordnet
      *
@@ -66,6 +74,8 @@ public class QUIZ extends FRAGEN
     
     void Fragestellen ()
     {
+      
+        
         if (momentanefrage == "Frage1")
         {
             Frage1 ();
@@ -153,22 +163,27 @@ public class QUIZ extends FRAGEN
         if (momentanefrage == "Frage1")
             {
              momentanefrage = "Frage2";
+             //fragetext.setText(momentanefrage);
             }
         else if(momentanefrage == "Frage2")
             {
              momentanefrage = "Frage3";
+             //fragetext.setText(momentanefrage);
             }
         else if(momentanefrage == "Frage3")
             {
              momentanefrage = "Frage4";
+             //fragetext.setText(momentanefrage);
             }
         else if(momentanefrage == "Frage4")
             {
              momentanefrage = "Frage5";
+             //fragetext.setText(momentanefrage);
             }
         else if(momentanefrage == "Frage5")
             {
              momentanefrage = "Frage6";
+             //fragetext.setText(momentanefrage);
             }
     }
     

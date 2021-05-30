@@ -17,7 +17,7 @@ import javax.swing.ImageIcon;
  * @author (LINDA UND LARA) 
  * @version (18.05)
  */
-public class FRAGEN
+public class FRAGEN 
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
 

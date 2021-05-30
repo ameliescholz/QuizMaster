@@ -1,4 +1,7 @@
-
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.event.KeyListener;
 /**
  * Beschreiben Sie hier die Klasse Spiel.
  * 
@@ -8,26 +11,252 @@
 public class Spiel extends QUIZ
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
-
+    ZEICHENFLAECHE zeichenflaeche;
+    FRAGEN fragen;
+    QUIZ quiz;
+    
+    Label fragetext;
+    
+    Label antworttext;
+    
+    private static final int rasterGroesse = 40;
+    private static final int hoeheFenster = rasterGroesse * 20;
+    private static final int breiteFenster = rasterGroesse * 26;
+    private static ZEICHENFLAECHE o = null;
+    private JFrame fenster = null;
+    JLabel l;
+    int x,y;
+    JFrame f;
+   
+    
     /**
      * Konstruktor für Objekte der Klasse Spiel
      */
     public Spiel()
     {
         // Instanzvariable initialisieren
-        x = 0;
+        
     }
 
     /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
+     * Diese Methode fuehrt das Spiel durch und setzt alle Methoden in die richtige 
+     * Reihenfolge
      * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
+     * 
      */
-    public int beispielMethode(int y)
+    void Spielstarten()
     {
         // tragen Sie hier den Code ein
-        return x + y;
+        new ZEICHENFLAECHE() ;
+        
+        
+        if (momentanefrage == "Frage1")
+        {
+                if (Ergebniss == true)
+                {
+                    MomentaneFrageaendern();
+                    fragetext = new Label();
+                    fragetext.setText(momentanefrage);
+                    fragetext.setVisible(true);
+                    fragetext.setLocation(200,50);
+                    fragetext.setSize(400,50);
+                    fenster.add(fragetext);
+                    
+                    MomentaneAntwortaendern();
+                    antworttext = new Label();
+                    antworttext.setText(momentaneantwort);
+                    antworttext.setVisible(true);
+                    antworttext.setLocation(200,100);
+                    antworttext.setSize(450,50);
+                    fenster.add(antworttext);
+                    
+                    
+                }
+                else if (Ergebniss == false)
+                {
+                    MomentaneFrageaendern();
+                    fragetext = new Label();
+                    fragetext.setText(momentanefrage);
+                    fragetext.setVisible(true);
+                    fragetext.setLocation(200,50);
+                    fragetext.setSize(400,50);
+                    fenster.add(fragetext);
+                    
+                    MomentaneAntwortaendern();
+                    MomentaneAntwortaendern();
+                    antworttext = new Label();
+                    antworttext.setText(momentaneantwort);
+                    antworttext.setVisible(true);
+                    antworttext.setLocation(200,100);
+                    antworttext.setSize(450,50);
+                    fenster.add(antworttext);
+                }
+        }
+        else if (momentanefrage == "Frage2")
+        {
+                if (Ergebniss == true)
+                {
+                    MomentaneFrageaendern();
+                    fragetext = new Label();
+                    fragetext.setText(momentanefrage);
+                    fragetext.setVisible(true);
+                    fragetext.setLocation(200,50);
+                    fragetext.setSize(400,50);
+                    fenster.add(fragetext);
+                    
+                    MomentaneAntwortaendern();
+                    MomentaneAntwortaendern();
+                    antworttext = new Label();
+                    antworttext.setText(momentaneantwort);
+                    antworttext.setVisible(true);
+                    antworttext.setLocation(200,100);
+                    antworttext.setSize(450,50);
+                    fenster.add(antworttext);
+                }
+                else if (Ergebniss == false)
+                {
+                    MomentaneFrageaendern();
+                    fragetext = new Label();
+                    fragetext.setText(momentanefrage);
+                    fragetext.setVisible(true);
+                    fragetext.setLocation(200,50);
+                    fragetext.setSize(400,50);
+                    fenster.add(fragetext);
+                    
+                    MomentaneAntwortaendern();
+                    MomentaneAntwortaendern();
+                    antworttext = new Label();
+                    antworttext.setText(momentaneantwort);
+                    antworttext.setVisible(true);
+                    antworttext.setLocation(200,100);
+                    antworttext.setSize(450,50);
+                    fenster.add(antworttext);
+                }
+        }
+        else if (momentanefrage == "Frage3")
+        {
+                if (Ergebniss == true)
+                {
+                    MomentaneFrageaendern();
+                    fragetext = new Label();
+                    fragetext.setText(momentanefrage);
+                    fragetext.setVisible(true);
+                    fragetext.setLocation(200,50);
+                    fragetext.setSize(400,50);
+                    fenster.add(fragetext);
+                    
+                    MomentaneAntwortaendern();
+                    MomentaneAntwortaendern();
+                    antworttext = new Label();
+                    antworttext.setText(momentaneantwort);
+                    antworttext.setVisible(true);
+                    antworttext.setLocation(200,100);
+                    antworttext.setSize(450,50);
+                    fenster.add(antworttext);
+                }
+                else if (Ergebniss == false)
+                {
+                    MomentaneFrageaendern();
+                    fragetext = new Label();
+                    fragetext.setText(momentanefrage);
+                    fragetext.setVisible(true);
+                    fragetext.setLocation(200,50);
+                    fragetext.setSize(400,50);
+                    fenster.add(fragetext);
+                    
+                    MomentaneAntwortaendern();
+                    MomentaneAntwortaendern();
+                    antworttext = new Label();
+                    antworttext.setText(momentaneantwort);
+                    antworttext.setVisible(true);
+                    antworttext.setLocation(200,100);
+                    antworttext.setSize(450,50);
+                    fenster.add(antworttext);
+                }
+        }
+        else if (momentanefrage == "Frage4")
+        {
+                if (Ergebniss == true)
+                {
+                    MomentaneFrageaendern();
+                    fragetext = new Label();
+                    fragetext.setText(momentanefrage);
+                    fragetext.setVisible(true);
+                    fragetext.setLocation(200,50);
+                    fragetext.setSize(400,50);
+                    fenster.add(fragetext);
+                    
+                    MomentaneAntwortaendern();
+                    MomentaneAntwortaendern();
+                    antworttext = new Label();
+                    antworttext.setText(momentaneantwort);
+                    antworttext.setVisible(true);
+                    antworttext.setLocation(200,100);
+                    antworttext.setSize(450,50);
+                    fenster.add(antworttext);
+                }
+                else if (Ergebniss == false)
+                {
+                    MomentaneFrageaendern();
+                    fragetext = new Label();
+                    fragetext.setText(momentanefrage);
+                    fragetext.setVisible(true);
+                    fragetext.setLocation(200,50);
+                    fragetext.setSize(400,50);
+                    fenster.add(fragetext);
+                    
+                    MomentaneAntwortaendern();
+                    MomentaneAntwortaendern();
+                    antworttext = new Label();
+                    antworttext.setText(momentaneantwort);
+                    antworttext.setVisible(true);
+                    antworttext.setLocation(200,100);
+                    antworttext.setSize(450,50);
+                    fenster.add(antworttext);
+                }
+        }
+        else if (momentanefrage == "Frage5")
+        {
+                if (Ergebniss == true)
+                {
+                    MomentaneFrageaendern();
+                    fragetext = new Label();
+                    fragetext.setText(momentanefrage);
+                    fragetext.setVisible(true);
+                    fragetext.setLocation(200,50);
+                    fragetext.setSize(400,50);
+                    fenster.add(fragetext);
+                    
+                    MomentaneAntwortaendern();
+                    MomentaneAntwortaendern();
+                    antworttext = new Label();
+                    antworttext.setText(momentaneantwort);
+                    antworttext.setVisible(true);
+                    antworttext.setLocation(200,100);
+                    antworttext.setSize(450,50);
+                    fenster.add(antworttext);
+                }
+                else if (Ergebniss == false)
+                {
+                    MomentaneFrageaendern();
+                    fragetext = new Label();
+                    fragetext.setText(momentanefrage);
+                    fragetext.setVisible(true);
+                    fragetext.setLocation(200,50);
+                    fragetext.setSize(400,50);
+                    fenster.add(fragetext);
+                    
+                    MomentaneAntwortaendern();
+                    MomentaneAntwortaendern();
+                    antworttext = new Label();
+                    antworttext.setText(momentaneantwort);
+                    antworttext.setVisible(true);
+                    antworttext.setLocation(200,100);
+                    antworttext.setSize(450,50);
+                    fenster.add(antworttext);
+                }
+        }
+       
+       
     }
 }
