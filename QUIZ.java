@@ -17,7 +17,9 @@ public class QUIZ extends FRAGEN
     char geantwortet;
     String momentanefrage;
     boolean Ergebniss;
-    String momentaneantwort;
+    String momentaneantwortA;
+    String momentaneantwortB;
+    String momentaneantwortC;
     ZEICHENFLAECHE fragetext;
     
     /**
@@ -27,7 +29,11 @@ public class QUIZ extends FRAGEN
     {
         // Instanzvariable initialisieren
         momentanefrage = Frage1;
-        momentaneantwort = Antwort1;
+        momentaneantwortA = Antwort1A;
+        momentaneantwortB = Antwort1B;
+        momentaneantwortC = Antwort1C;
+        
+     
         
          
     }
@@ -189,27 +195,75 @@ public class QUIZ extends FRAGEN
     
     
     
-    void MomentaneAntwortaendern()
+    void MomentaneAntwortAaendern()
     {
-        if (momentaneantwort == "Antwort1")
+        if (momentaneantwortA == "Antwort1A")
             {
-             momentaneantwort = "Antwort2";
+             momentaneantwortA = "Antwort2A";
             }
-        else if(momentaneantwort == "Antwort2")
+        else if(momentaneantwortA == "Antwort2A")
             {
-             momentaneantwort = "Antwort3";
+             momentaneantwortA = "Antwort3A";
             }
-        else if(momentaneantwort == "Antwort3")
+        else if(momentaneantwortA == "Antwort3A")
             {
-             momentaneantwort = "Antwort4";
+             momentaneantwortA = "Antwort4A";
             }
-        else if(momentaneantwort == "Antwort4")
+        else if(momentaneantwortA == "Antwort4A")
             {
-             momentaneantwort = "Antwort5";
+             momentaneantwortA = "Antwort5A";
             }
-        else if(momentaneantwort == "Antwort5")
+        else if(momentaneantwortA == "Antwort5A")
             {
-             momentaneantwort = "Antwort6";
+             momentaneantwortA = "Antwort6A";
+            }
+    }
+    
+    void MomentaneAntwortBaendern()
+    {
+        if (momentaneantwortB == "Antwort1B")
+            {
+             momentaneantwortB = "Antwort2B";
+            }
+        else if(momentaneantwortB == "Antwort2B")
+            {
+             momentaneantwortB = "Antwort3B";
+            }
+        else if(momentaneantwortB == "Antwort3B")
+            {
+             momentaneantwortB = "Antwort4B";
+            }
+        else if(momentaneantwortB == "Antwort4B")
+            {
+             momentaneantwortB = "Antwort5B";
+            }
+        else if(momentaneantwortB == "Antwort5B")
+            {
+             momentaneantwortB = "Antwort6B";
+            }
+    }
+    
+    void MomentaneAntwortCaendern()
+    {
+        if (momentaneantwortC == "Antwort1C")
+            {
+             momentaneantwortC = "Antwort2C";
+            }
+        else if(momentaneantwortC == "Antwort2C")
+            {
+             momentaneantwortC = "Antwort3C";
+            }
+        else if(momentaneantwortC == "Antwort3C")
+            {
+             momentaneantwortC = "Antwort4C";
+            }
+        else if(momentaneantwortC == "Antwort4C")
+            {
+             momentaneantwortC = "Antwort5C";
+            }
+        else if(momentaneantwortC == "Antwort5C")
+            {
+             momentaneantwortC = "Antwort6C";
             }
     }
     

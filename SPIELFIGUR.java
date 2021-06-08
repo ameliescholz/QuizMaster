@@ -2,7 +2,7 @@
 /**
  * Beschreiben Sie hier die Klasse SPIELFIGUR.
  * 
- * @author (Linda und Lara) 
+ * @author () 
  * @version (eine Versionsnummer oder ein Datum)
  */
 public class SPIELFIGUR

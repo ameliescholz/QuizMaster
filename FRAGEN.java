@@ -27,11 +27,21 @@ public class FRAGEN
     String Frage3;
     String Frage4;
     String Frage5;
-    String Antwort1;
-    String Antwort2;
-    String Antwort3;
-    String Antwort4;
-    String Antwort5;
+    String Antwort1A;
+    String Antwort2A;
+    String Antwort3A;
+    String Antwort4A;
+    String Antwort5A;
+    String Antwort1B;
+    String Antwort2B;
+    String Antwort3B;
+    String Antwort4B;
+    String Antwort5B;
+    String Antwort1C;
+    String Antwort2C;
+    String Antwort3C;
+    String Antwort4C;
+    String Antwort5C;
     String RichtigeAnwort1;
     String RichtigeAnwort2;
     String RichtigeAnwort3;
@@ -53,11 +63,23 @@ public class FRAGEN
         Frage3 = "Wie nennt man ein maennliches Schaf?";
         Frage4 = "Welcher dieser Affen zaehlt nicht zu den Menschenaffen?";
         Frage5 = "Wer oder was ist eine Mimiose?";
-        Antwort1 = "(A) Bis zu 20 000 Zaehne   (B) Bis zu 10 000 Zaehne  (C) bis zu 2000 Zaehne"  ;
-        Antwort2 = "(A) Murmeltier  (B) Siebenschlaefer  (C) Lemming ";
-        Antwort3 = "(A) Lamm   (B) Hammel   (C) Widder ";
-        Antwort4 = "(A) Gorilla   (B) Gibbon   (C) Oran-utan";
-        Antwort5 = "(A) eine Hautkrankheit   (B)  eine tropische Pflanze  (C) ein biochemischer Vorgang ";
+        
+        Antwort1A = "(A) Bis zu 20 000 Zaehne";  
+        Antwort1B = "(B) Bis zu 10 000 Zaehne";
+        Antwort1C = "(C) bis zu 2000 Zaehne"  ;
+        Antwort2A = "(A) Murmeltier";  
+        Antwort2B = "(B) Siebenschlaefer";
+        Antwort2C = "(C) Lemming";
+        Antwort3A = "(A) Lamm";  
+        Antwort3B = "(B) Hammel";
+        Antwort3C = "(C) Widder";
+        Antwort4A = "(A) Gorilla ";  
+        Antwort4B = "(B) Gibbon";
+        Antwort4C = "(C) Oran-utan";
+        Antwort5A = "(A) eine Hautkrankheit";  
+        Antwort5B = "(B)  eine tropische Pflanze ";
+        Antwort5C = "(C) ein biochemischer Vorgang ";
+        
         RichtigeAnwort1 = "(A)";
         RichtigeAnwort2  = "(C)";
         RichtigeAnwort3  = "(C)";
@@ -66,30 +88,31 @@ public class FRAGEN
 
   }
   
+  // nicht mehr noetig:
   void Frage1 ()
         {
            System. out. println(Frage1); 
-           System. out. println(Antwort1);
+           System. out. println(Antwort1A);
         }
   void Frage2 ()
         {
            System. out. println (Frage2); 
-           System. out. println(Antwort2);
+           System. out. println(Antwort2A);
         }
   void Frage3 ()
         {
            System. out. println (Frage3); 
-           System. out. println(Antwort3);
+           System. out. println(Antwort3A);
         }
   void Frage4 ()
         {
            System. out. println (Frage4); 
-           System. out. println(Antwort4);
+           System. out. println(Antwort4A);
         }      
   void Frage5 ()
         {
            System. out. println (Frage5);
-           System. out. println(Antwort5);
+           System. out. println(Antwort5A);
         }
  }
   

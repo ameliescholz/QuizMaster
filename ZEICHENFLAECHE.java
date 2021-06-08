@@ -6,7 +6,7 @@ import java.awt.event.KeyListener;
 /**
  * Beschreiben Sie hier die Klasse ZEICHENFLÄCHE.
  * 
- * @author (Lara und Linda) 
+ * @author (Lara und Linda und Lina und Amelie) 
  * @version (eine Versionsnummer oder ein Datum)
  */
 
@@ -29,7 +29,7 @@ public class ZEICHENFLAECHE extends QUIZ
     
     Label fragetext;
     
-    Label antworttext;
+    Button antworttext;
    
   
     /**
@@ -63,13 +63,35 @@ public class ZEICHENFLAECHE extends QUIZ
         fragetext.setSize(400,50);
         fenster.add(fragetext);
         
-        antworttext = new Label();
-        antworttext.setText(momentaneantwort);
+        //antworttext = new Label();
+        //antworttext.setText(momentaneantwort);
+        //antworttext.setVisible(true);
+        //antworttext.setLocation(200,100);
+        //antworttext.setSize(450,50);
+        //fenster.add(antworttext);
+        
+        antworttext = new Button();
+        antworttext.setLocation(10,250);
+        antworttext.setLabel(momentaneantwortA);
         antworttext.setVisible(true);
-        antworttext.setLocation(200,100);
-        antworttext.setSize(450,50);
+        antworttext.setSize(200,30);
+        antworttext.setEnabled(true);
+        antworttext.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                //Hier wird Frage A ausgewählt
+            }
+        });
         fenster.add(antworttext);
         
+        fenster.addWindowListener(new WindowAdapter()
+        {
+            public void windowClosing(WindowEvent e)
+            {
+                System.exit(1);
+            }
+        });
         
         
     }
