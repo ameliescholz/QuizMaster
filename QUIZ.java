@@ -45,7 +45,7 @@ public class QUIZ extends FRAGEN
     }
     
     /**
-     * hier wird die gedruekte Taste einer moeglichen Antwortmoeglichkeit zugeordnet
+     *nicht mehr noetig:
      *
      */
     void TasteGedrueckt(char welche)
@@ -198,74 +198,75 @@ public class QUIZ extends FRAGEN
     void MomentaneAntwortAaendern()
     {
         if (momentaneantwortA == "Antwort1A")
-            {
+        {
              momentaneantwortA = "Antwort2A";
             }
         else if(momentaneantwortA == "Antwort2A")
-            {
+        {
              momentaneantwortA = "Antwort3A";
             }
         else if(momentaneantwortA == "Antwort3A")
-            {
+        {
              momentaneantwortA = "Antwort4A";
             }
         else if(momentaneantwortA == "Antwort4A")
-            {
+        {
              momentaneantwortA = "Antwort5A";
             }
         else if(momentaneantwortA == "Antwort5A")
-            {
+        {
              momentaneantwortA = "Antwort6A";
             }
+   }
+            
+        void MomentaneAntwortBaendern()
+    {
+        if (momentaneantwortA == "Antwort1B")
+            {
+             momentaneantwortA = "Antwort2B";
+            }
+        else if(momentaneantwortA == "Antwort2B")
+            {
+             momentaneantwortA = "Antwort3B";
+            }
+        else if(momentaneantwortA == "Antwort3B")
+            {
+             momentaneantwortA = "Antwort4B";
+            }
+        else if(momentaneantwortA == "Antwort4B")
+            {
+             momentaneantwortA = "Antwort5B";
+            }
+        else if(momentaneantwortA == "Antwort5B")
+            {
+             momentaneantwortA = "Antwort6B";
+            }
+    }     
+            
+        void MomentaneAntwortCaendern()
+    {
+        if (momentaneantwortA == "Antwort1C")
+            {
+             momentaneantwortA = "Antwort2C";
+            }
+        else if(momentaneantwortA == "Antwort2C")
+            {
+             momentaneantwortA = "Antwort3C";
+            }
+        else if(momentaneantwortA == "Antwort3C")
+            {
+             momentaneantwortA = "Antwort4C";
+            }
+        else if(momentaneantwortA == "Antwort4C")
+            {
+             momentaneantwortA = "Antwort5C";
+            }
+        else if(momentaneantwortA == "Antwort5C")
+            {
+             momentaneantwortA = "Antwort6C";
+            }
     }
     
-    void MomentaneAntwortBaendern()
-    {
-        if (momentaneantwortB == "Antwort1B")
-            {
-             momentaneantwortB = "Antwort2B";
-            }
-        else if(momentaneantwortB == "Antwort2B")
-            {
-             momentaneantwortB = "Antwort3B";
-            }
-        else if(momentaneantwortB == "Antwort3B")
-            {
-             momentaneantwortB = "Antwort4B";
-            }
-        else if(momentaneantwortB == "Antwort4B")
-            {
-             momentaneantwortB = "Antwort5B";
-            }
-        else if(momentaneantwortB == "Antwort5B")
-            {
-             momentaneantwortB = "Antwort6B";
-            }
-    }
-    
-    void MomentaneAntwortCaendern()
-    {
-        if (momentaneantwortC == "Antwort1C")
-            {
-             momentaneantwortC = "Antwort2C";
-            }
-        else if(momentaneantwortC == "Antwort2C")
-            {
-             momentaneantwortC = "Antwort3C";
-            }
-        else if(momentaneantwortC == "Antwort3C")
-            {
-             momentaneantwortC = "Antwort4C";
-            }
-        else if(momentaneantwortC == "Antwort4C")
-            {
-             momentaneantwortC = "Antwort5C";
-            }
-        else if(momentaneantwortC == "Antwort5C")
-            {
-             momentaneantwortC = "Antwort6C";
-            }
-    }
     
     
 }

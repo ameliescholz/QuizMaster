@@ -80,11 +80,11 @@ public class FRAGEN
         Antwort5B = "(B)  eine tropische Pflanze ";
         Antwort5C = "(C) ein biochemischer Vorgang ";
         
-        RichtigeAnwort1 = "(A)";
-        RichtigeAnwort2  = "(C)";
-        RichtigeAnwort3  = "(C)";
-        RichtigeAnwort4  = "(B)";
-        RichtigeAnwort5  = "(B)";
+        RichtigeAnwort1 = "A";
+        RichtigeAnwort2  = "C";
+        RichtigeAnwort3  = "C";
+        RichtigeAnwort4  = "B";
+        RichtigeAnwort5  = "B";
 
   }
   

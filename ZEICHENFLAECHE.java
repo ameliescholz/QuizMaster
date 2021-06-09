@@ -29,7 +29,9 @@ public class ZEICHENFLAECHE extends QUIZ
     
     Label fragetext;
     
-    Button antworttext;
+    Button antworttextA;
+    Button antworttextB;
+    Button antworttextC;
    
   
     /**
@@ -70,20 +72,55 @@ public class ZEICHENFLAECHE extends QUIZ
         //antworttext.setSize(450,50);
         //fenster.add(antworttext);
         
-        antworttext = new Button();
-        antworttext.setLocation(10,250);
-        antworttext.setLabel(momentaneantwortA);
-        antworttext.setVisible(true);
-        antworttext.setSize(200,30);
-        antworttext.setEnabled(true);
-        antworttext.addActionListener(new ActionListener()
+        antworttextA = new Button();
+        antworttextA.setLocation(10,150);
+        antworttextA.setLabel(momentaneantwortA);
+        antworttextA.setVisible(true);
+        antworttextA.setSize(200,30);
+        antworttextA.setEnabled(true);
+        antworttextA.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent e)
             {
-                //Hier wird Frage A ausgewählt
+                geantwortet = 'A';
             }
         });
-        fenster.add(antworttext);
+        fenster.add(antworttextA);
+        
+        antworttextB = new Button();
+        antworttextB.setLocation(250,150);
+        antworttextB.setLabel(momentaneantwortB);
+        antworttextB.setVisible(true);
+        antworttextB.setSize(200,30);
+        antworttextB.setEnabled(true);
+        antworttextB.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                geantwortet = 'B';
+            }
+        });
+        fenster.add(antworttextB);
+        
+        
+        antworttextC = new Button();
+        antworttextC.setLocation(490,150);
+        antworttextC.setLabel(momentaneantwortC);
+        antworttextC.setVisible(true);
+        antworttextC.setSize(200,30);
+        antworttextC.setEnabled(true);
+        antworttextC.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                geantwortet = 'C';
+            }
+        });
+        fenster.add(antworttextC);
+        
+        
+        
+        
         
         fenster.addWindowListener(new WindowAdapter()
         {

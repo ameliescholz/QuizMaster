@@ -83,7 +83,7 @@ public class Spiel extends QUIZ
                     fenster.add(fragetext);
                     
                    
-                    //MomentaneAntwortaendernA();
+                    MomentaneAntwortAaendern();
                     antworttext = new Label();
                     antworttext.setText(momentaneantwortA);
                     antworttext.setVisible(true);
@@ -104,10 +104,9 @@ public class Spiel extends QUIZ
                     fragetext.setSize(400,50);
                     fenster.add(fragetext);
                     
-                    //MomentaneAntwortaendernA();
-                    //MomentaneAntwortaendernA();
+                    MomentaneAntwortAaendern();
                     antworttext = new Label();
-                    //antworttext.setText(momentaneantwortA);
+                    antworttext.setText(momentaneantwortA);
                     antworttext.setVisible(true);
                     antworttext.setLocation(200,100);
                     antworttext.setSize(450,50);
@@ -123,10 +122,9 @@ public class Spiel extends QUIZ
                     fragetext.setSize(400,50);
                     fenster.add(fragetext);
                     
-                    //MomentaneAntwortaendernA();
-                    //MomentaneAntwortaendernA();
+                    MomentaneAntwortAaendern();
                     antworttext = new Label();
-                    //antworttext.setText(momentaneantwortA);
+                    antworttext.setText(momentaneantwortA);
                     antworttext.setVisible(true);
                     antworttext.setLocation(200,100);
                     antworttext.setSize(450,50);
@@ -145,10 +143,9 @@ public class Spiel extends QUIZ
                     fragetext.setSize(400,50);
                     fenster.add(fragetext);
                     
-                    //MomentaneAntwortaendern();
-                    //MomentaneAntwortaendern();
+                    MomentaneAntwortAaendern();
                     antworttext = new Label();
-                    //antworttext.setText(momentaneantwort);
+                    antworttext.setText(momentaneantwortA);
                     antworttext.setVisible(true);
                     antworttext.setLocation(200,100);
                     antworttext.setSize(450,50);
@@ -164,10 +161,9 @@ public class Spiel extends QUIZ
                     fragetext.setSize(400,50);
                     fenster.add(fragetext);
                     
-                    //MomentaneAntwortaendern();
-                    //MomentaneAntwortaendern();
+                    MomentaneAntwortAaendern();
                     antworttext = new Label();
-                    //antworttext.setText(momentaneantwort);
+                    antworttext.setText(momentaneantwortA);
                     antworttext.setVisible(true);
                     antworttext.setLocation(200,100);
                     antworttext.setSize(450,50);
@@ -186,10 +182,9 @@ public class Spiel extends QUIZ
                     fragetext.setSize(400,50);
                     fenster.add(fragetext);
                     
-                    //MomentaneAntwortaendern();
-                    //MomentaneAntwortaendern();
+                    MomentaneAntwortAaendern();
                     antworttext = new Label();
-                    //antworttext.setText(momentaneantwort);
+                    antworttext.setText(momentaneantwortA);
                     antworttext.setVisible(true);
                     antworttext.setLocation(200,100);
                     antworttext.setSize(450,50);
@@ -205,10 +200,9 @@ public class Spiel extends QUIZ
                     fragetext.setSize(400,50);
                     fenster.add(fragetext);
                     
-                    //MomentaneAntwortaendern();
-                    //MomentaneAntwortaendern();
+                    MomentaneAntwortAaendern();
                     antworttext = new Label();
-                    //antworttext.setText(momentaneantwort);
+                    antworttext.setText(momentaneantwortA);
                     antworttext.setVisible(true);
                     antworttext.setLocation(200,100);
                     antworttext.setSize(450,50);
@@ -227,10 +221,9 @@ public class Spiel extends QUIZ
                     fragetext.setSize(400,50);
                     fenster.add(fragetext);
                     
-                    //MomentaneAntwortaendern();
-                    //MomentaneAntwortaendern();
+                    MomentaneAntwortAaendern();
                     antworttext = new Label();
-                    //antworttext.setText(momentaneantwort);
+                    antworttext.setText(momentaneantwortA);
                     antworttext.setVisible(true);
                     antworttext.setLocation(200,100);
                     antworttext.setSize(450,50);
@@ -246,10 +239,9 @@ public class Spiel extends QUIZ
                     fragetext.setSize(400,50);
                     fenster.add(fragetext);
                     
-                    //MomentaneAntwortaendern();
-                    //MomentaneAntwortaendern();
+                    MomentaneAntwortAaendern();
                     antworttext = new Label();
-                    //antworttext.setText(momentaneantwort);
+                    antworttext.setText(momentaneantwortA);
                     antworttext.setVisible(true);
                     antworttext.setLocation(200,100);
                     antworttext.setSize(450,50);
