@@ -88,32 +88,7 @@ public class FRAGEN
 
   }
   
-  // nicht mehr noetig:
-  void Frage1 ()
-        {
-           System. out. println(Frage1); 
-           System. out. println(Antwort1A);
-        }
-  void Frage2 ()
-        {
-           System. out. println (Frage2); 
-           System. out. println(Antwort2A);
-        }
-  void Frage3 ()
-        {
-           System. out. println (Frage3); 
-           System. out. println(Antwort3A);
-        }
-  void Frage4 ()
-        {
-           System. out. println (Frage4); 
-           System. out. println(Antwort4A);
-        }      
-  void Frage5 ()
-        {
-           System. out. println (Frage5);
-           System. out. println(Antwort5A);
-        }
+  
  }
   
 

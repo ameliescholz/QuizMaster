@@ -19,14 +19,14 @@ public class Spiel extends QUIZ
     
     Label antworttext;
     
-    private static final int rasterGroesse = 40;
-    private static final int hoeheFenster = rasterGroesse * 20;
-    private static final int breiteFenster = rasterGroesse * 26;
-    private static ZEICHENFLAECHE o = null;
-    private JFrame fenster = null;
-    JLabel l;
-    int x,y;
-    JFrame f;
+    //private static final int rasterGroesse = 40;
+    //private static final int hoeheFenster = rasterGroesse * 20;
+    //private static final int breiteFenster = rasterGroesse * 26;
+    //private static ZEICHENFLAECHE o = null;
+    //private JFrame fenster = null;
+    //JLabel l;
+    //int x,y;
+    //JFrame f;
    
     
     /**
@@ -51,202 +51,75 @@ public class Spiel extends QUIZ
         
         
         if (momentanefrage == "Frage1")
+
         {
+              Antwortpruefen ();
+              ZEICHENFLAECHE zeichenflaeche;
+        
                 if (Ergebniss == true)
+                
                 {
-                    MomentaneFrageaendern();
-                    fragetext = new Label();
-                    fragetext.setText(momentanefrage);
-                    fragetext.setVisible(true);
-                    fragetext.setLocation(200,50);
-                    fragetext.setSize(400,50);
-                    fenster.add(fragetext);
+                    MomentaneFrageaendern ();
+                    MomentaneAntwortAaendern ();
+                    MomentaneAntwortBaendern ();
+                    MomentaneAntwortCaendern ();
                     
-                    MomentaneAntwortAaendern();
-                    antworttext = new Label();
-                    antworttext.setText(momentaneantwortA);
-                    antworttext.setVisible(true);
-                    antworttext.setLocation(200,100);
-                    antworttext.setSize(450,50);
-                    fenster.add(antworttext);
+                    //Frageerstellen();
+                    //AntwortAerstellen ();
+                    //AntwortBerstellen ();
+                    //AntwortCerstellen ();
+                    
+                    
                     
                     
                 }
                 else if (Ergebniss == false)
                 {
-                    MomentaneFrageaendern();
-                    fragetext = new Label();
-                    fragetext.setText(momentanefrage);
-                    fragetext.setVisible(true);
-                    fragetext.setLocation(200,50);
-                    fragetext.setSize(400,50);
-                    fenster.add(fragetext);
                     
-                   
-                    MomentaneAntwortAaendern();
-                    antworttext = new Label();
-                    antworttext.setText(momentaneantwortA);
-                    antworttext.setVisible(true);
-                    antworttext.setLocation(200,100);
-                    antworttext.setSize(450,50);
-                    fenster.add(antworttext);
                 }
         }
         else if (momentanefrage == "Frage2")
         {
                 if (Ergebniss == true)
                 {
-                    MomentaneFrageaendern();
-                    fragetext = new Label();
-                    fragetext.setText(momentanefrage);
-                    fragetext.setVisible(true);
-                    fragetext.setLocation(200,50);
-                    fragetext.setSize(400,50);
-                    fenster.add(fragetext);
                     
-                    MomentaneAntwortAaendern();
-                    antworttext = new Label();
-                    antworttext.setText(momentaneantwortA);
-                    antworttext.setVisible(true);
-                    antworttext.setLocation(200,100);
-                    antworttext.setSize(450,50);
-                    fenster.add(antworttext);
                 }
                 else if (Ergebniss == false)
                 {
-                    MomentaneFrageaendern();
-                    fragetext = new Label();
-                    fragetext.setText(momentanefrage);
-                    fragetext.setVisible(true);
-                    fragetext.setLocation(200,50);
-                    fragetext.setSize(400,50);
-                    fenster.add(fragetext);
                     
-                    MomentaneAntwortAaendern();
-                    antworttext = new Label();
-                    antworttext.setText(momentaneantwortA);
-                    antworttext.setVisible(true);
-                    antworttext.setLocation(200,100);
-                    antworttext.setSize(450,50);
-                    fenster.add(antworttext);
                 }
         }
         else if (momentanefrage == "Frage3")
         {
                 if (Ergebniss == true)
                 {
-                    MomentaneFrageaendern();
-                    fragetext = new Label();
-                    fragetext.setText(momentanefrage);
-                    fragetext.setVisible(true);
-                    fragetext.setLocation(200,50);
-                    fragetext.setSize(400,50);
-                    fenster.add(fragetext);
                     
-                    MomentaneAntwortAaendern();
-                    antworttext = new Label();
-                    antworttext.setText(momentaneantwortA);
-                    antworttext.setVisible(true);
-                    antworttext.setLocation(200,100);
-                    antworttext.setSize(450,50);
-                    fenster.add(antworttext);
                 }
                 else if (Ergebniss == false)
                 {
-                    MomentaneFrageaendern();
-                    fragetext = new Label();
-                    fragetext.setText(momentanefrage);
-                    fragetext.setVisible(true);
-                    fragetext.setLocation(200,50);
-                    fragetext.setSize(400,50);
-                    fenster.add(fragetext);
                     
-                    MomentaneAntwortAaendern();
-                    antworttext = new Label();
-                    antworttext.setText(momentaneantwortA);
-                    antworttext.setVisible(true);
-                    antworttext.setLocation(200,100);
-                    antworttext.setSize(450,50);
-                    fenster.add(antworttext);
                 }
         }
         else if (momentanefrage == "Frage4")
         {
                 if (Ergebniss == true)
                 {
-                    MomentaneFrageaendern();
-                    fragetext = new Label();
-                    fragetext.setText(momentanefrage);
-                    fragetext.setVisible(true);
-                    fragetext.setLocation(200,50);
-                    fragetext.setSize(400,50);
-                    fenster.add(fragetext);
                     
-                    MomentaneAntwortAaendern();
-                    antworttext = new Label();
-                    antworttext.setText(momentaneantwortA);
-                    antworttext.setVisible(true);
-                    antworttext.setLocation(200,100);
-                    antworttext.setSize(450,50);
-                    fenster.add(antworttext);
                 }
                 else if (Ergebniss == false)
                 {
-                    MomentaneFrageaendern();
-                    fragetext = new Label();
-                    fragetext.setText(momentanefrage);
-                    fragetext.setVisible(true);
-                    fragetext.setLocation(200,50);
-                    fragetext.setSize(400,50);
-                    fenster.add(fragetext);
                     
-                    MomentaneAntwortAaendern();
-                    antworttext = new Label();
-                    antworttext.setText(momentaneantwortA);
-                    antworttext.setVisible(true);
-                    antworttext.setLocation(200,100);
-                    antworttext.setSize(450,50);
-                    fenster.add(antworttext);
                 }
         }
         else if (momentanefrage == "Frage5")
         {
                 if (Ergebniss == true)
                 {
-                    MomentaneFrageaendern();
-                    fragetext = new Label();
-                    fragetext.setText(momentanefrage);
-                    fragetext.setVisible(true);
-                    fragetext.setLocation(200,50);
-                    fragetext.setSize(400,50);
-                    fenster.add(fragetext);
                     
-                    MomentaneAntwortAaendern();
-                    antworttext = new Label();
-                    antworttext.setText(momentaneantwortA);
-                    antworttext.setVisible(true);
-                    antworttext.setLocation(200,100);
-                    antworttext.setSize(450,50);
-                    fenster.add(antworttext);
                 }
                 else if (Ergebniss == false)
                 {
-                    MomentaneFrageaendern();
-                    fragetext = new Label();
-                    fragetext.setText(momentanefrage);
-                    fragetext.setVisible(true);
-                    fragetext.setLocation(200,50);
-                    fragetext.setSize(400,50);
-                    fenster.add(fragetext);
-                    
-                    MomentaneAntwortAaendern();
-                    antworttext = new Label();
-                    antworttext.setText(momentaneantwortA);
-                    antworttext.setVisible(true);
-                    antworttext.setLocation(200,100);
-                    antworttext.setSize(450,50);
-                    fenster.add(antworttext);
-                }
+                                    }
         }
        
        

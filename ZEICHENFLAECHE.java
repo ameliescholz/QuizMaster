@@ -102,7 +102,7 @@ public class ZEICHENFLAECHE extends QUIZ
         });
         fenster.add(antworttextB);
         
-        
+       
         antworttextC = new Button();
         antworttextC.setLocation(490,150);
         antworttextC.setLabel(momentaneantwortC);
@@ -117,7 +117,7 @@ public class ZEICHENFLAECHE extends QUIZ
             }
         });
         fenster.add(antworttextC);
-        
+    
         
         
         
@@ -163,7 +163,72 @@ public class ZEICHENFLAECHE extends QUIZ
         return hoeheFenster;
     }
     
-     
+    void Frageerstellen()
+    {
+        fragetext = new Label();
+        fragetext.setText(momentanefrage);
+        fragetext.setVisible(true);
+        fragetext.setLocation(200,50);
+        fragetext.setSize(400,50);
+        fenster.add(fragetext);  
+    }
     
-}
+    
+    
+    void AntwortAerstellen ()
+      {
+      antworttextA = new Button();
+        antworttextA.setLocation(10,150);
+        antworttextA.setLabel(momentaneantwortA);
+        antworttextA.setVisible(true);
+        antworttextA.setSize(200,30);
+        antworttextA.setEnabled(true);
+        antworttextA.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                geantwortet = 'A';
+            }
+        });
+        fenster.add(antworttextA);  
+      }
+      
+    void AntwortBerstellen ()
+     {
+      antworttextB = new Button();
+        antworttextB.setLocation(250,150);
+        antworttextB.setLabel(momentaneantwortB);
+        antworttextB.setVisible(true);
+        antworttextB.setSize(200,30);
+        antworttextB.setEnabled(true);
+        antworttextB.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                geantwortet = 'B';
+            }
+        });
+        fenster.add(antworttextB);  
+     }
+     
+     void AntwortCerstellen ()
+     {
+        antworttextC = new Button();
+        antworttextC.setLocation(490,150);
+        antworttextC.setLabel(momentaneantwortC);
+        antworttextC.setVisible(true);
+        antworttextC.setSize(200,30);
+        antworttextC.setEnabled(true);
+        antworttextC.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                geantwortet = 'C';
+            }
+        });
+        fenster.add(antworttextC); 
+    }
+    }
+    
+
 

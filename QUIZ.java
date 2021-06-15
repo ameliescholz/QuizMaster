@@ -38,11 +38,11 @@ public class QUIZ extends FRAGEN
          
     }
 
-    void Ausloeser()
-    {
+    //void Ausloeser()
+    //{
         //TasteGedrueckt();
-         Antwortpruefen();
-    }
+        // Antwortpruefen();
+    //}
     
     /**
      *nicht mehr noetig:
@@ -84,23 +84,23 @@ public class QUIZ extends FRAGEN
         
         if (momentanefrage == "Frage1")
         {
-            Frage1 ();
+            
         }
         else if (momentanefrage == "Frage2")
         {
-            Frage2 ();
+            
         }
         else if (momentanefrage == "Frage3")
         {
-            Frage3 ();
+            
         }
         else if (momentanefrage == "Frage4")
         {
-            Frage4 ();
+            
         }
         else if (momentanefrage == "Frage5")
         {
-            Frage5 ();
+            
         }
       
     }
