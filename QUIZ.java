@@ -70,7 +70,7 @@ public class QUIZ extends FRAGEN
             //System. out. println ());
         }
 
-  
+        
     }
     
     /**
