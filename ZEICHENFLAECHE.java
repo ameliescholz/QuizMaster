@@ -28,7 +28,9 @@ public class ZEICHENFLAECHE extends QUIZ
     
     Label fragetext;
     
-    Label antworttext;
+    Button antworttextA;
+    Button antworttextB;
+    Button antworttextC;
     
     private Timer timer;
     
@@ -54,15 +56,7 @@ public class ZEICHENFLAECHE extends QUIZ
         fenster. getContentPane (). setBackground (new Color (0, 255, 255));
         Insets i = fenster.getInsets();
         fenster. setSize (breiteFenster, hoeheFenster + i.top);  
-        //ImageFrage1 = new ImageIcon ("Frage 1.jpg");
-        //l = new JLabel (ImageFrage1);
-        //l.setLocation(x,y);
-        //f.add(l);
-        //x = 0;
-        //y = 0;
-        //f = new JFrame();
-        //f.setVisible(true);
-        //f.setSize(500,500);
+        
         
         vogelm();
         sonnem();
@@ -81,14 +75,70 @@ public class ZEICHENFLAECHE extends QUIZ
         fragetext.setSize(400,50);
         fenster.add(fragetext);
          
-        antworttext = new Label();
-        antworttext.setText(momentaneantwortA);
-        antworttext.setVisible(true); 
-        antworttext.setLocation(200,100);
-        antworttext.setSize(450,50);
-        fenster.add(antworttext);
+        //antworttext = new Label();
+        //antworttext.setText(momentaneantwortA);
+        //antworttext.setVisible(true); 
+        //antworttext.setLocation(200,100);
+        //antworttext.setSize(450,50);
+        //fenster.add(antworttext);
+        
+        antworttextA = new Button();
+        antworttextA.setLocation(10,150);
+        antworttextA.setLabel(momentaneantwortA);
+        antworttextA.setVisible(true);
+        antworttextA.setSize(200,30);
+        antworttextA.setEnabled(true);
+        antworttextA.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                geantwortet = 'A';
+            }
+        });
+        fenster.add(antworttextA);
+        
+        antworttextB = new Button();
+        antworttextB.setLocation(250,150);
+        antworttextB.setLabel(momentaneantwortB);
+        antworttextB.setVisible(true);
+        antworttextB.setSize(200,30);
+        antworttextB.setEnabled(true);
+        antworttextB.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                geantwortet = 'B';
+            }
+        });
+        fenster.add(antworttextB);
         
         
+        antworttextC = new Button();
+        antworttextC.setLocation(490,150);
+        antworttextC.setLabel(momentaneantwortC);
+        antworttextC.setVisible(true);
+        antworttextC.setSize(200,30);
+        antworttextC.setEnabled(true);
+        antworttextC.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                geantwortet = 'C';
+            }
+        });
+        fenster.add(antworttextC);
+        
+        
+        
+        
+        
+        fenster.addWindowListener(new WindowAdapter()
+        {
+            public void windowClosing(WindowEvent e)
+            {
+                System.exit(1);
+            }
+        });
 
         
         timer = new Timer (1000, new ActionListener () {
